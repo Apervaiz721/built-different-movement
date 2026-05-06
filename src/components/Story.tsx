@@ -9,7 +9,7 @@ export default function Story() {
 
           <div className="space-y-6 text-base sm:text-lg text-navy/80 leading-relaxed max-w-3xl mx-auto">
             <p>
-              Built Different started as one woman&apos;s story — a memoir about
+              Built Different started as one woman&apos;s story. A memoir about
               growing up feeling different, hiding behind a mask, and learning
               that what made her different was what made her powerful.
             </p>
@@ -25,7 +25,7 @@ export default function Story() {
               &ldquo;That is not anger. That is survival.&rdquo;
             </blockquote>
             <cite className="block mt-4 text-sm sm:text-base text-navy/60 not-italic tracking-wide">
-              — Arzoo Pervaiz
+              Arzoo Pervaiz
             </cite>
           </div>
         </div>

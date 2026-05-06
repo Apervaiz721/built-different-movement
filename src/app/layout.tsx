@@ -17,7 +17,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "The Built Different Movement | You're Not Broken. You're Built Different.",
   description:
-    "A movement for everyone who was told they were too much — and chose to keep going anyway. By Arzoo Pervaiz, author of Built Different.",
+    "A movement for everyone who was told they were too much and chose to keep going anyway. By Arzoo Pervaiz, author of Built Different.",
   keywords: [
     "Built Different",
     "Arzoo Pervaiz",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Built Different Movement",
     description:
-      "You're not broken. You're Built Different. A movement for everyone who was told they were too much — and chose to keep going anyway.",
+      "You're not broken. You're Built Different. A movement for everyone who was told they were too much and chose to keep going anyway.",
     url: "https://thebuiltdifferentmovement.com",
     siteName: "The Built Different Movement",
     locale: "en_US",

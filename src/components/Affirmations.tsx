@@ -18,7 +18,7 @@ function AffirmationCard({ quote }: { quote: string }) {
         {quote}
       </p>
       <p className="mt-6 text-sm text-navy/50 tracking-wide">
-        — Arzoo Pervaiz, <span className="italic">Built Different</span>
+        Arzoo Pervaiz, <span className="italic">Built Different</span>
       </p>
     </div>
   );

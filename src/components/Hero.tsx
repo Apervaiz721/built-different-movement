@@ -16,7 +16,7 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 sm:mt-8 text-lg sm:text-xl md:text-2xl text-white/70 max-w-2xl mx-auto leading-relaxed font-[family-name:var(--font-body)]">
-          A movement for everyone who was told they were too much — and chose to
+          A movement for everyone who was told they were too much and chose to
           keep going anyway.
         </p>
 

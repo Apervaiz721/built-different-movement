@@ -3,17 +3,21 @@ const books = [
     title: "Built Different: A Memoir",
     description:
       "The story that started it all. A raw, honest journey through bullying, chronic illness, identity, and the power of being unapologetically yourself.",
-    buttonText: "Get Your Copy",
-    buttonHref: "#",
     available: true,
+    links: [
+      { label: "Amazon", href: "https://www.amazon.com/dp/B0GYJRFY87" },
+      {
+        label: "Barnes & Noble",
+        href: "https://www.barnesandnoble.com/w/built-different-arzoo-pervaiz/1150005697?ean=9798256337476",
+      },
+    ],
   },
   {
     title: "Built Different: The Workbook & Guide",
     description:
       "Your turn to do the work. A guided companion to help you unpack your story, reclaim your truth, and step into who you were always meant to be.",
-    buttonText: "Get Notified",
-    buttonHref: "#connect",
     available: false,
+    links: [{ label: "Get Notified", href: "#connect" }],
   },
 ];
 
@@ -57,16 +61,23 @@ export default function Books() {
                   {book.description}
                 </p>
 
-                <a
-                  href={book.buttonHref}
-                  className={`inline-block text-center px-8 py-3 rounded-full font-semibold transition-colors duration-300 ${
-                    book.available
-                      ? "bg-navy text-white hover:bg-navy-light"
-                      : "bg-rose text-navy hover:bg-rose-light"
-                  }`}
-                >
-                  {book.buttonText}
-                </a>
+                <div className={`flex flex-wrap gap-3 ${book.available ? "" : ""}`}>
+                  {book.links.map((link) => (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      target={link.href.startsWith("#") ? undefined : "_blank"}
+                      rel={link.href.startsWith("#") ? undefined : "noopener noreferrer"}
+                      className={`inline-block text-center px-6 py-3 rounded-full font-semibold transition-colors duration-300 ${
+                        book.available
+                          ? "bg-navy text-white hover:bg-navy-light"
+                          : "bg-rose text-navy hover:bg-rose-light"
+                      }`}
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

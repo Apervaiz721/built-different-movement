@@ -4,13 +4,35 @@ import { useState } from "react";
 
 export default function Connect() {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setSubmitted(true);
-      setEmail("");
+    if (!email) return;
+
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        setStatus("error");
+        setErrorMessage(data.error || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setStatus("error");
+      setErrorMessage("Unable to connect. Please try again later.");
     }
   };
 
@@ -26,7 +48,7 @@ export default function Connect() {
             Be the first to know about Book 2, events, and movement updates.
           </p>
 
-          {submitted ? (
+          {status === "success" ? (
             <div className="bg-sage/20 rounded-2xl p-8 text-sage-light">
               <p className="text-xl font-[family-name:var(--font-playfair)] font-semibold">
                 You&apos;re in.
@@ -46,15 +68,21 @@ export default function Connect() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address"
                 required
-                className="flex-1 px-6 py-3.5 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:border-rose focus:ring-1 focus:ring-rose transition-colors"
+                disabled={status === "loading"}
+                className="flex-1 px-6 py-3.5 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:border-rose focus:ring-1 focus:ring-rose transition-colors disabled:opacity-50"
               />
               <button
                 type="submit"
-                className="px-8 py-3.5 bg-rose text-navy font-semibold rounded-full hover:bg-rose-light transition-colors duration-300 whitespace-nowrap"
+                disabled={status === "loading"}
+                className="px-8 py-3.5 bg-rose text-navy font-semibold rounded-full hover:bg-rose-light transition-colors duration-300 whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Join
+                {status === "loading" ? "Joining..." : "Join"}
               </button>
             </form>
+          )}
+
+          {status === "error" && (
+            <p className="mt-4 text-rose text-sm">{errorMessage}</p>
           )}
 
           {/* Social Icons */}

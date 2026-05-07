@@ -20,12 +20,13 @@ export default function Story() {
             </p>
           </div>
 
-          <div className="mt-12 sm:mt-16 border-l-4 border-rose pl-6 sm:pl-8 py-4 max-w-2xl mx-auto">
+          <div className="mt-12 sm:mt-16 max-w-2xl mx-auto text-center">
             <blockquote className="font-[family-name:var(--font-playfair)] text-xl sm:text-2xl md:text-3xl italic text-navy leading-relaxed">
               &ldquo;That is not anger. That is survival.&rdquo;
             </blockquote>
+            <div className="mx-auto mt-4 w-12 h-px bg-rose/40"></div>
             <cite className="block mt-4 text-sm sm:text-base text-navy/60 not-italic tracking-wide">
-              Arzoo Pervaiz
+              - Arzoo Pervaiz
             </cite>
           </div>
         </div>

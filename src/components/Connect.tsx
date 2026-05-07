@@ -60,7 +60,9 @@ export default function Connect() {
           {/* Social Icons */}
           <div className="mt-10 sm:mt-12 flex justify-center gap-6">
             <a
-              href="#"
+              href="https://www.instagram.com/thebuiltdifferentmovement"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-rose hover:border-rose transition-colors duration-300"
             >

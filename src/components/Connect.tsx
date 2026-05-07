@@ -71,7 +71,9 @@ export default function Connect() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@built.different.movement"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="TikTok"
               className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-rose hover:border-rose transition-colors duration-300"
             >

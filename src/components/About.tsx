@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="bg-warm-white py-20 sm:py-28 md:py-32">
@@ -8,12 +10,17 @@ export default function About() {
           </h2>
 
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
-            {/* Photo Placeholder */}
+            {/* Photo */}
             <div className="flex-shrink-0">
-              <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-rose/40 bg-navy/5 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-navy/30">
-                  AP
-                </span>
+              <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-rose/40 overflow-hidden">
+                <Image
+                  src="/arzoo-headshot.jpeg"
+                  alt="Arzoo Pervaiz"
+                  width={192}
+                  height={192}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
 

@@ -2,17 +2,17 @@ const topics = [
   {
     title: "Resilience and Identity",
     description:
-      "What it means to grow up feeling different and how to turn pain into purpose.",
+      "Growing up feeling different, learning to own your story, and turning pain into purpose.",
   },
   {
     title: "Disability Advocacy",
     description:
-      "Living with a neuromuscular condition, navigating healthcare, and the power of visibility.",
+      "Navigating life with a neuromuscular condition, the power of visibility, and why representation matters.",
   },
   {
     title: "Mental Health and Healing",
     description:
-      "Breaking the stigma around therapy, vulnerability, and doing the work.",
+      "The journey of therapy, the courage it takes to be vulnerable, and what it really means to do the work.",
   },
 ];
 
@@ -22,13 +22,15 @@ export default function Speaking() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="fade-in-up">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-6 sm:mb-8">
-            Book Arzoo to Speak
+            Invite Arzoo to Speak
           </h2>
 
           <p className="text-base sm:text-lg text-white/70 leading-relaxed text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            Arzoo shares her story at conferences, corporate ERGs, universities,
-            and community events. Her talks center on resilience, identity,
-            disability advocacy, and the power of owning your story.
+            Arzoo is passionate about sharing her story and would love to
+            connect with conferences, corporate ERGs, universities, and
+            community events. She is open to speaking on topics around
+            resilience, identity, disability advocacy, and the power of owning
+            your story.
           </p>
 
           {/* Topic Cards */}
@@ -54,7 +56,7 @@ export default function Speaking() {
               href="mailto:apervaiz66@gmail.com?subject=Speaking%20Inquiry%20--%20Built%20Different%20Movement"
               className="inline-block px-10 py-4 bg-rose text-navy font-semibold rounded-full hover:bg-rose-light transition-colors duration-300 text-base sm:text-lg"
             >
-              Book Arzoo
+              Get in Touch
             </a>
           </div>
         </div>

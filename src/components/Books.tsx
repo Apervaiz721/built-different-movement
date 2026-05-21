@@ -16,10 +16,12 @@ const books = [
   {
     title: "Built Different: The Workbook & Guide",
     description:
-      "Your turn to do the work. A guided companion to help you unpack your story, reclaim your truth, and step into who you were always meant to be.",
-    available: false,
-    coverImage: null,
-    links: [{ label: "Get Notified", href: "#connect" }],
+      "Your turn to do the work. A guided companion to help you unpack your story, reclaim your truth, and step into who you were always meant to be. Nine chapters of guided reflections, journal prompts, and exercises — because healing isn't just about reading someone else's truth. It's about finding yours.",
+    available: true,
+    coverImage: "/images/book-2-cover.jpg",
+    links: [
+      { label: "Amazon", href: "https://www.amazon.com/dp/B0H2JFHS5R" },
+    ],
   },
 ];
 

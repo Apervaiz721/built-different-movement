@@ -8,6 +8,7 @@ const navLinks = [
   { href: "#books", label: "Books" },
   { href: "#movement", label: "Movement" },
   { href: "#speaking", label: "Speaking" },
+  { href: "#coaching", label: "Work With Me" },
   { href: "#connect", label: "Connect" },
 ];
 
@@ -95,7 +96,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ${
-            isMobileOpen ? "max-h-64 pb-4" : "max-h-0"
+            isMobileOpen ? "max-h-96 pb-4" : "max-h-0"
           }`}
         >
           <div className="flex flex-col gap-3 pt-2">

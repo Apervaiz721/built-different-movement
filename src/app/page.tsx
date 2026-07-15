@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Books from "@/components/Books";
 import Movement from "@/components/Movement";
 import Speaking from "@/components/Speaking";
+import Coaching from "@/components/Coaching";
 import Affirmations from "@/components/Affirmations";
 import Connect from "@/components/Connect";
 import Footer from "@/components/Footer";
@@ -22,6 +23,7 @@ export default function Home() {
         <Books />
         <Movement />
         <Speaking />
+        <Coaching />
         <Affirmations />
         <Connect />
       </main>

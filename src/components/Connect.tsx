@@ -48,8 +48,8 @@ export default function Connect() {
             Enter your email and I&apos;ll send you{" "}
             <span className="text-white/90 font-medium">
               5 Truths for When You&apos;ve Been Told You&apos;re Too Much
-            </span>{" "}
-            &mdash; a short, honest guide to help you stop hiding and start becoming.
+            </span>
+            . It&apos;s a short, honest guide to help you stop hiding and start becoming.
           </p>
 
           <p className="text-sm text-white/50 mb-10 sm:mb-12">

@@ -109,7 +109,7 @@ export default function Coaching() {
           {/* CTA */}
           <div className="text-center">
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=apervaiz66@gmail.com&su=Coaching%20Inquiry%20-%20Built%20Different%20Movement"
+              href="https://calendly.com/apervaiz66/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-10 py-4 bg-rose text-navy font-semibold rounded-full hover:bg-rose-light transition-colors duration-300 text-base sm:text-lg"

@@ -53,7 +53,9 @@ export default function Speaking() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="mailto:apervaiz66@gmail.com?subject=Speaking%20Inquiry%20--%20Built%20Different%20Movement"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=apervaiz66@gmail.com&su=Speaking%20Inquiry%20-%20Built%20Different%20Movement"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-10 py-4 bg-rose text-navy font-semibold rounded-full hover:bg-rose-light transition-colors duration-300 text-base sm:text-lg"
             >
               Get in Touch
@@ -67,6 +69,16 @@ export default function Speaking() {
               Download Speaker Kit
             </a>
           </div>
+
+          <p className="text-center text-white/50 text-sm mt-6">
+            Prefer your own email app? Write to{" "}
+            <a
+              href="mailto:apervaiz66@gmail.com?subject=Speaking%20Inquiry%20-%20Built%20Different%20Movement"
+              className="text-rose hover:text-rose-light underline"
+            >
+              apervaiz66@gmail.com
+            </a>
+          </p>
         </div>
       </div>
     </section>

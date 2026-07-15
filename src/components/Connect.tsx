@@ -41,11 +41,19 @@ export default function Connect() {
       <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
         <div className="fade-in-up">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-            Stay Connected
+            Get the Free Guide
           </h2>
 
-          <p className="text-base sm:text-lg text-white/70 mb-10 sm:mb-12">
-            Be the first to know about Book 2, events, and movement updates.
+          <p className="text-base sm:text-lg text-white/70 mb-3">
+            Enter your email and I&apos;ll send you{" "}
+            <span className="text-white/90 font-medium">
+              5 Truths for When You&apos;ve Been Told You&apos;re Too Much
+            </span>{" "}
+            &mdash; a short, honest guide to help you stop hiding and start becoming.
+          </p>
+
+          <p className="text-sm text-white/50 mb-10 sm:mb-12">
+            You&apos;ll also be first to know about the books, events, and movement updates.
           </p>
 
           {status === "success" ? (
@@ -54,8 +62,16 @@ export default function Connect() {
                 You&apos;re in.
               </p>
               <p className="mt-2 text-sage-light/80">
-                Welcome to the movement.
+                Welcome to the movement. Your guide is ready.
               </p>
+              <a
+                href="/five-truths.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-5 px-8 py-3.5 bg-rose text-navy font-semibold rounded-full hover:bg-rose-light transition-colors duration-300"
+              >
+                Download the 5 Truths Guide
+              </a>
             </div>
           ) : (
             <form
@@ -76,7 +92,7 @@ export default function Connect() {
                 disabled={status === "loading"}
                 className="px-8 py-3.5 bg-rose text-navy font-semibold rounded-full hover:bg-rose-light transition-colors duration-300 whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === "loading" ? "Joining..." : "Join"}
+                {status === "loading" ? "Sending..." : "Send My Guide"}
               </button>
             </form>
           )}

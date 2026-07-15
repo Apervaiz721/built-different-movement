@@ -50,13 +50,21 @@ export default function Speaking() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="text-center">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="mailto:apervaiz66@gmail.com?subject=Speaking%20Inquiry%20--%20Built%20Different%20Movement"
               className="inline-block px-10 py-4 bg-rose text-navy font-semibold rounded-full hover:bg-rose-light transition-colors duration-300 text-base sm:text-lg"
             >
               Get in Touch
+            </a>
+            <a
+              href="/speaker-kit.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-10 py-4 border border-rose/60 text-white font-semibold rounded-full hover:bg-rose hover:text-navy transition-colors duration-300 text-base sm:text-lg"
+            >
+              Download Speaker Kit
             </a>
           </div>
         </div>
